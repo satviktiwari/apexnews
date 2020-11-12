@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>www.apexnews.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url("BG_Img.jpg") no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.2;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(204, 135, 110);
+    padding: 15px;
+    margin: 2px 35px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+.h-content_primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+#content-section p{
+    color:black;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpeg" alt="www.apexnews.com">
+        </div>
+        <ul>
+            <li class="item"><a href="HomePage.html">Home</a></li>
+            <li class="item"><a href="National.html">National</a></li>
+            <li class="item"><a href="International.html">International</a></li>
+            <li class="item"><a href="Sports.html">Sports</a></li>
+            <li class="item"><a href="Business.html">Business</a></li>
+            <li class="item"><a href="Science&Tech.html">Science & Tech</a></li>
+            <li class="item"><a href="Miscellaneous.html">Miscellaneous</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">International News</h1>
+        <p> "Right News for Right People" </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        
+    </section>
+
+
+
+    <section id="content-section">
+        <hr>
+        <h3 class="h-content_primary center">Monday, 01-January-2020</h3>
+        <hr>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga, iure laboriosam eius doloribus minus, expedita consectetur molestias ad ex dignissimos! Reiciendis placeat rerum aut doloribus, illum dolorum eum molestiae.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia velit soluta eaque, accusantium asperiores, totam sint quas excepturi error ipsum earum laudantium nam pariatur repudiandae exercitationem repellat eum placeat quam! Culpa vero est sed?</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro ullam quo minus blanditiis eveniet nisi illum natus accusamus similique quibusdam rem mollitia cupiditate culpa at sequi debitis quae vero fugit, minima recusandae magni laboriosam!</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quos blanditiis voluptatum nulla voluptas modi, reprehenderit nam molestias amet, perferendis perspiciatis exercitationem explicabo distinctio iusto quasi nobis, ab culpa quo expedita incidunt aperiam odit unde quam. Eius, alias eligendi! Sed!</p><br>
+
+        <hr>
+        <h3 class="h-content_primary center">Tuesday, 02-January-2020</h3>
+        <hr>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga, iure laboriosam eius doloribus minus, expedita consectetur molestias ad ex dignissimos! Reiciendis placeat rerum aut doloribus, illum dolorum eum molestiae.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia velit soluta eaque, accusantium asperiores, totam sint quas excepturi error ipsum earum laudantium nam pariatur repudiandae exercitationem repellat eum placeat quam! Culpa vero est sed?</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro ullam quo minus blanditiis eveniet nisi illum natus accusamus similique quibusdam rem mollitia cupiditate culpa at sequi debitis quae vero fugit, minima recusandae magni laboriosam!</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quos blanditiis voluptatum nulla voluptas modi, reprehenderit nam molestias amet, perferendis perspiciatis exercitationem explicabo distinctio iusto quasi nobis, ab culpa quo expedita incidunt aperiam odit unde quam. Eius, alias eligendi! Sed!</p><br>
+
+        <hr>
+        <h3 class="h-content_primary center">Wednesday, 03-January-2020</h3>
+        <hr>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga, iure laboriosam eius doloribus minus, expedita consectetur molestias ad ex dignissimos! Reiciendis placeat rerum aut doloribus, illum dolorum eum molestiae.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia velit soluta eaque, accusantium asperiores, totam sint quas excepturi error ipsum earum laudantium nam pariatur repudiandae exercitationem repellat eum placeat quam! Culpa vero est sed?</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro ullam quo minus blanditiis eveniet nisi illum natus accusamus similique quibusdam rem mollitia cupiditate culpa at sequi debitis quae vero fugit, minima recusandae magni laboriosam!</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quos blanditiis voluptatum nulla voluptas modi, reprehenderit nam molestias amet, perferendis perspiciatis exercitationem explicabo distinctio iusto quasi nobis, ab culpa quo expedita incidunt aperiam odit unde quam. Eius, alias eligendi! Sed!</p><br>
+
+        <hr>
+        <h3 class="h-content_primary center">Thursday, 04-January-2020</h3>
+        <hr>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga, iure laboriosam eius doloribus minus, expedita consectetur molestias ad ex dignissimos! Reiciendis placeat rerum aut doloribus, illum dolorum eum molestiae.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia velit soluta eaque, accusantium asperiores, totam sint quas excepturi error ipsum earum laudantium nam pariatur repudiandae exercitationem repellat eum placeat quam! Culpa vero est sed?</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro ullam quo minus blanditiis eveniet nisi illum natus accusamus similique quibusdam rem mollitia cupiditate culpa at sequi debitis quae vero fugit, minima recusandae magni laboriosam!</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quos blanditiis voluptatum nulla voluptas modi, reprehenderit nam molestias amet, perferendis perspiciatis exercitationem explicabo distinctio iusto quasi nobis, ab culpa quo expedita incidunt aperiam odit unde quam. Eius, alias eligendi! Sed!</p><br>
+
+        <hr>
+        <h3 class="h-content_primary center">Friday, 05-January-2020</h3>
+        <hr>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fuga, iure laboriosam eius doloribus minus, expedita consectetur molestias ad ex dignissimos! Reiciendis placeat rerum aut doloribus, illum dolorum eum molestiae.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore mollitia velit soluta eaque, accusantium asperiores, totam sint quas excepturi error ipsum earum laudantium nam pariatur repudiandae exercitationem repellat eum placeat quam! Culpa vero est sed?</p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro ullam quo minus blanditiis eveniet nisi illum natus accusamus similique quibusdam rem mollitia cupiditate culpa at sequi debitis quae vero fugit, minima recusandae magni laboriosam!</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quos blanditiis voluptatum nulla voluptas modi, reprehenderit nam molestias amet, perferendis perspiciatis exercitationem explicabo distinctio iusto quasi nobis, ab culpa quo expedita incidunt aperiam odit unde quam. Eius, alias eligendi! Sed!</p><br>
+
+
+      
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Sources</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="Inshorts.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="TOI.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="BBC_News.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="ANI.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+            <img src="Diplomat.jpg" alt="Our Client">
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <footer>
+        <div class="center">
+            Copyright &copy; "www.apexnews.com" <b>*All rights reserved*</b>
+        </div>
+    </footer>
+</body>
+
+</html>
